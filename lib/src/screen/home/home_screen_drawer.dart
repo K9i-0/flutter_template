@@ -10,10 +10,16 @@ class _Drawer extends HookConsumerWidget {
         children: [
           const DrawerHeader(child: Text('Drawer')),
           ListTile(
+            leading: const Icon(Icons.settings),
+            // TODO(K9i-0): 翻訳
+            title: const Text('Settings'),
+            onTap: () => context.push(SettingsScreen.routeName),
+          ),
+          ListTile(
             leading: const Icon(Icons.info),
             // TODO(K9i-0): 翻訳
             title: const Text('OSS License'),
-            onTap: () => showLicensePage(context: context),
+            onTap: () => context.push(licenseScreenRouteName),
           ),
         ],
       ),

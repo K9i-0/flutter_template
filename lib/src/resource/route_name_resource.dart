@@ -1,0 +1,1 @@
+const licenseScreenRouteName = '/license';
