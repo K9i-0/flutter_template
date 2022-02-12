@@ -10,11 +10,12 @@ class _Body extends HookConsumerWidget {
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
+        children: [
           const Text('You have pushed the button this many times:'),
+          const Gap(16),
           Text(
             '${screenState.count}',
-            style: Theme.of(context).textTheme.headline4,
+            style: context.textTheme.headlineMedium,
           ),
         ],
       ),
