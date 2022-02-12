@@ -5,3 +5,4 @@ analyzer:
    - "flutter_sdk/**"
   errors:
     todo: ignore
+    depend_on_referenced_packages: ignore
