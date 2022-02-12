@@ -1,0 +1,12 @@
+{
+    "@@locale": "ja",
+    "appTitle": "Flutterテンプレート",
+    "homeScreenDrawerHeaderLabelOSSLicense": "OSSライセンス",
+    "homeScreenDrawerHeaderLabelSettings": "設定",
+    "homeScreenDrawerHeaderTitle": "ドロワー",
+    "homeScreenTitle": "ホーム",
+    "settingsScreenThemeModeRadioLabelDark": "ダーク",
+    "settingsScreenThemeModeRadioLabelLight": "ライト",
+    "settingsScreenThemeModeRadioLabelSystem": "システム",
+    "settingsScreenTitle": "設定"
+}

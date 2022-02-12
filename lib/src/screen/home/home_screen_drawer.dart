@@ -8,17 +8,20 @@ class _Drawer extends HookConsumerWidget {
     return Drawer(
       child: ListView(
         children: [
-          const DrawerHeader(child: Text('Drawer')),
+          DrawerHeader(
+            child: Text(
+              context.l10n.homeScreenDrawerHeaderTitle,
+              style: context.textTheme.headlineLarge,
+            ),
+          ),
           ListTile(
             leading: const Icon(Icons.settings),
-            // TODO(K9i-0): 翻訳
-            title: const Text('Settings'),
+            title: Text(context.l10n.homeScreenDrawerHeaderLabelSettings),
             onTap: () => context.push(SettingsScreen.routeName),
           ),
           ListTile(
             leading: const Icon(Icons.info),
-            // TODO(K9i-0): 翻訳
-            title: const Text('OSS License'),
+            title: Text(context.l10n.homeScreenDrawerHeaderLabelOSSLicense),
             onTap: () => context.push(licenseScreenRouteName),
           ),
         ],

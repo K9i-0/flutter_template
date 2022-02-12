@@ -5,14 +5,15 @@ final _themeModeProvider = Provider<ThemeMode>(
 );
 
 extension _ThemeModeEx on ThemeMode {
-  String get label {
+  String getLabel(BuildContext context) {
+    final l10n = context.l10n;
     switch (this) {
       case ThemeMode.system:
-        return 'System';
+        return l10n.settingsScreenThemeModeRadioLabelSystem;
       case ThemeMode.light:
-        return 'Light';
+        return l10n.settingsScreenThemeModeRadioLabelLight;
       case ThemeMode.dark:
-        return 'Dark';
+        return l10n.settingsScreenThemeModeRadioLabelDark;
     }
   }
 }
@@ -29,7 +30,7 @@ class _ThemeModeRadioListTile extends HookConsumerWidget {
     final themeModeController = ref.watch(themeModeControllerProvider.notifier);
 
     return RadioListTile<ThemeMode>(
-      title: Text(themeMode.label),
+      title: Text(themeMode.getLabel(context)),
       value: themeMode,
       groupValue: currentThemeMode,
       onChanged: (nullableValue) {

@@ -9,7 +9,7 @@ class _AppBar extends HookConsumerWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return AppBar(
-      title: const Text('Home'),
+      title: Text(context.l10n.homeScreenTitle),
     );
   }
 }

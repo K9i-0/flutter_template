@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_template/src/controller/theme_mode/theme_mode_controller.dart';
+import 'package:flutter_template/src/extension/extension.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 part 'settings_screen_body.dart';
@@ -14,7 +15,7 @@ class SettingsScreen extends HookConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Settings'),
+        title: Text(context.l10n.settingsScreenTitle),
       ),
       body: const _Body(),
     );

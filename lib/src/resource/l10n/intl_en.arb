@@ -1,0 +1,12 @@
+{
+    "@@locale": "en",
+    "appTitle": "Flutter Template",
+    "homeScreenDrawerHeaderLabelOSSLicense": "OSS License",
+    "homeScreenDrawerHeaderLabelSettings": "Settings",
+    "homeScreenDrawerHeaderTitle": "Drawer",
+    "homeScreenTitle": "Home",
+    "settingsScreenThemeModeRadioLabelDark": "Dark",
+    "settingsScreenThemeModeRadioLabelLight": "Light",
+    "settingsScreenThemeModeRadioLabelSystem": "System",
+    "settingsScreenTitle": "Settings"
+}

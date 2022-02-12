@@ -1,10 +1,13 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_template/src/controller/theme_mode/theme_mode_controller.dart';
+import 'package:flutter_template/src/extension/extension.dart';
 import 'package:flutter_template/src/screen/settings/settings_screen.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
+import 'resource/l10n/generated/l10n.dart';
 import 'resource/route_name_resource.dart';
 import 'screen/home/home_screen.dart';
 
@@ -27,7 +30,14 @@ class App extends HookConsumerWidget {
       // routeInformationParser、routerDelegateはgo_routerに必要
       routeInformationParser: router.routeInformationParser,
       routerDelegate: router.routerDelegate,
-      title: 'Flutter Demo',
+      localizationsDelegates: const [
+        L10n.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: L10n.delegate.supportedLocales,
+      onGenerateTitle: (context) => context.l10n.appTitle,
       theme: ThemeData(
         colorSchemeSeed: Colors.indigo,
         useMaterial3: true,
