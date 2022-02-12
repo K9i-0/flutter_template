@@ -7,6 +7,7 @@ import 'package:image/image.dart' as img;
 import 'package:path_provider/path_provider.dart';
 import 'package:provider/provider.dart';
 
+/// Take a screenshotボタンを押すとクリップボードに便利コマンドがコピーされる
 Future<void> onScreenshot(
   BuildContext context,
   DeviceScreenshot screenshot,
