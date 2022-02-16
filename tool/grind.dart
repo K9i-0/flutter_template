@@ -119,7 +119,7 @@ Future<void> _createPullRequest({
   final github = GitHub(auth: findAuthenticationFromEnvironment());
   await github.pullRequests.create(
     RepositorySlug('K9i-0', 'flutter_template'),
-    CreatePullRequest(title, 'dev', 'master'),
+    CreatePullRequest(title, releaseBranchName, 'master'),
   );
 }
 
