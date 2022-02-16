@@ -287,6 +287,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.0"
+  github:
+    dependency: "direct dev"
+    description:
+      name: github
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "9.0.0"
   glob:
     dependency: transitive
     description:
@@ -322,6 +329,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.3"
+  http:
+    dependency: transitive
+    description:
+      name: http
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.13.4"
   http_multi_server:
     dependency: transitive
     description:
@@ -755,7 +769,7 @@ packages:
     source: hosted
     version: "5.3.1"
   yaml:
-    dependency: transitive
+    dependency: "direct dev"
     description:
       name: yaml
       url: "https://pub.dartlang.org"
