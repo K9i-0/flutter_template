@@ -30,14 +30,19 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   freezed: ^1.1.1
-  pedantic_mono: ^1.16.0
+  grinder: ^0.9.0
+  pedantic_mono: ^1.17.0
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/images/
 
 # intlの生成場所を変更
+# https://marketplace.visualstudio.com/items?itemName=localizely.flutter-intl#:~:text=Configuration%20options
 flutter_intl:
   enabled: true
   class_name: L10n
+  main_locale: en
   arb_dir: lib/src/resource/l10n
   output_dir: lib/src/resource/l10n/generated

@@ -5,7 +5,7 @@ analyzer:
     - "flutter_sdk/**"
     - "**/*.freezed.dart"
     - "**/*.g.dart"
-    - lib/src/resource/l10n/generated/intl/messages_**.dart
+    - lib/src/resource/l10n/generated/**.dart
   errors:
     todo: ignore
     depend_on_referenced_packages: ignore

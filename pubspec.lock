@@ -308,6 +308,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.0"
+  grinder:
+    dependency: "direct dev"
+    description:
+      name: grinder
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.9.0"
   hooks_riverpod:
     dependency: "direct main"
     description:
@@ -489,7 +496,7 @@ packages:
       name: pedantic_mono
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.16.0"
+    version: "1.17.0"
   petitparser:
     dependency: transitive
     description:
