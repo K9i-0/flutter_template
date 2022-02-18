@@ -1,0 +1,21 @@
+name: Flutter Analyze
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  flutter-analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.3.4
+      - name: "Install Flutter"
+        run: ./.github/workflows/scripts/install-flutter.sh
+      - run: flutter pub get
+      - uses: invertase/github-action-dart-analyzer@v1
+        with:
+          fatal-infos: true
+          fatal-warnings: true
+          annotate: true
+          annotate-only: false
+          working-directory: ./lib/
