@@ -37,8 +37,8 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-  assets:
-    - assets/images/
+  # assets:
+  #   - assets/images/
 
 # intlの生成場所を変更
 # https://marketplace.visualstudio.com/items?itemName=localizely.flutter-intl#:~:text=Configuration%20options
