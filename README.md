@@ -1,16 +1,34 @@
-# flutter_template
+# Flutter Template
 
-A new Flutter project.
+Flutterアプリを作るときに使えるテンプレートリポジトリです。
 
-## Getting Started
+## 使ってるライブラリ等
+### 状態管理
+[riverpod](https://riverpod.dev/)
 
-This project is a starting point for a Flutter application.
+### 遷移
+[go_router](https://zenn.dev/inari_sushio/scraps/01ef7604a4b934)
 
-A few resources to get you started if this is your first Flutter project:
+### フレーバー対応
+[FlutterでDart-defineのみを使って開発環境と本番環境を分ける
+](https://zenn.dev/riscait/articles/separating-environments-in-flutter)
+## 使い方
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+1. 「Use this template」ボタンを押してこのこのリポジトリを複製します。
+2. （オプション）Grinderを設定します。
+   1. grinderでよく使うコマンドを実行できるようになっています。
+   2. [導入方法](https://zenn.dev/k9i/articles/bcfa83b08e56d6)
+3. エディタでアプリID等を置換します。
+   1. 「com.k9i.flutterTemplate」で検索して、iOSのbundle identifierを置換します。
+   2. 「com.k9i.flutter_template」で検索して、Androidのpackage名を置換します。
+      1. Androidのpackage名
+   3. 「flutter_template」を検索して、パッケージ名置換します。
+   4. 「Flutter Template」を検索して、アプリ名を置換します。
+4. アプリアイコンを置き換えます。
+   1. assets/imagesディレクトリにあるapp_icon_{Flavor}.pngを使いたい画像に置き換えます。
+   2. dev、stg、prodの3つのFlavorに対応しています。[この記事。](https://zenn.dev/riscait/articles/separating-environments-in-flutter)の方法を使っています
+   3. grind gen-iconsでアイコンを生成します。
+5. スプラッシュ画面を置き換えます。
+   1. assets/imagesディレクトリにあるsplash_icon.pngを使いたい画像に置き換えます。
+   2. grind gen-splashでスプラッシュ画像を生成します。
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
