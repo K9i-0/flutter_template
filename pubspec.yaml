@@ -26,6 +26,7 @@ dependencies:
 
 dev_dependencies:
   build_runner: ^2.1.7
+  flutter_gen_runner: ^4.1.5
   flutter_lints: ^1.0.4
   flutter_test:
     sdk: flutter
@@ -37,8 +38,8 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-  # assets:
-  #   - assets/images/
+  assets:
+    - assets/images/
 
 # intlの生成場所を変更
 # https://marketplace.visualstudio.com/items?itemName=localizely.flutter-intl#:~:text=Configuration%20options
@@ -48,3 +49,7 @@ flutter_intl:
   main_locale: en
   arb_dir: lib/src/resource/l10n
   output_dir: lib/src/resource/l10n/generated
+
+# flutter_genの生成場所を変更
+flutter_gen:
+  output: lib/src/resource

@@ -7,12 +7,12 @@ class _Drawer extends HookConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return Drawer(
       child: ListView(
+        padding: EdgeInsets.zero,
         children: [
-          DrawerHeader(
-            child: Text(
-              context.l10n.homeScreenDrawerHeaderTitle,
-              style: context.textTheme.headlineLarge,
-            ),
+          UserAccountsDrawerHeader(
+            currentAccountPicture: Assets.images.fukuzawaYukichi.image(),
+            accountName: const Text('sample'),
+            accountEmail: const Text('sample@example.com'),
           ),
           ListTile(
             leading: const Icon(Icons.settings),
