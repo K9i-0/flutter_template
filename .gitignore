@@ -45,3 +45,6 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 flutter_sdk
+
+# Dart-define related
+**/android/app/src/main/res/mipmap*/

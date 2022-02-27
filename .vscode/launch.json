@@ -5,10 +5,31 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Dev",
+            "name": "Run dev",
             "request": "launch",
             "type": "dart",
             "program": "lib/main.dart",
+            "args": [
+                "--dart-define=FLAVOR=dev"
+            ],
+        },
+        {
+            "name": "Run stg",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "args": [
+                "--dart-define=FLAVOR=stg"
+            ],
+        },
+        {
+            "name": "Run prod",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "args": [
+                "--dart-define=FLAVOR=prod"
+            ],
         },
     ]
 }
