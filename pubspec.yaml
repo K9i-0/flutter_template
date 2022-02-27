@@ -34,6 +34,7 @@ dev_dependencies:
         url: https://github.com/Davenchy/flutter_launcher_icons.git
         ref: fixMinSdkParseFlutter2.8
   flutter_lints: ^1.0.4
+  flutter_native_splash: ^2.0.5
   flutter_test:
     sdk: flutter
   freezed: ^1.1.1
