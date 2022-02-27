@@ -1,7 +1,5 @@
 {
-    // asdfでinstallしたsdkのパスをシンボリックリンクで設定する
-    // https://zenn.dev/k9i/articles/0c169499f15b0c
-    "dart.flutterSdkPath": "flutter_sdk",
+    "dart.flutterSdkPath": "$HOME/.asdf/installs/flutter/2.10.0-stable",
     // スペルチェッカーの許可リスト
     "cSpell.words": [
         "prefs"

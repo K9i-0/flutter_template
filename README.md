@@ -14,7 +14,7 @@ Flutterアプリを作るときに使えるテンプレートリポジトリで�
 ](https://zenn.dev/riscait/articles/separating-environments-in-flutter)
 
 ### Flutterバージョン管理
-[asdf前提のignore等があります](https://zenn.dev/k9i/articles/0c169499f15b0c)
+settings.jsonにasdf前提の設定があります。
 ## 使い方
 
 1. 「Use this template」ボタンを押してこのこのリポジトリを複製します。
