@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_template/src/local/shared_preferences_provider.dart';
 import 'package:flutter_template/src/resource/key_resource.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
-import '../local/shared_preferences_provider.dart';
 
 final settingsRepositoryProvider = Provider(
   (ref) => SettingsRepository(read: ref.read),

@@ -5,7 +5,7 @@ class _Body extends HookConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final screenState = ref.watch(homeScreenControllerProvider);
+    final state = ref.watch(homeScreenProvider);
 
     return Center(
       child: Column(
@@ -14,7 +14,7 @@ class _Body extends HookConsumerWidget {
           const Text('You have pushed the button this many times:'),
           const Gap(16),
           Text(
-            '${screenState.count}',
+            '${state.count}',
             style: context.textTheme.headlineMedium,
           ),
         ],

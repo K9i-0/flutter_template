@@ -26,8 +26,8 @@ class _ThemeModeRadioListTile extends HookConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final themeMode = ref.watch(_themeModeProvider);
-    final currentThemeMode = ref.watch(themeModeControllerProvider);
-    final themeModeController = ref.watch(themeModeControllerProvider.notifier);
+    final currentThemeMode = ref.watch(themeModeProvider);
+    final themeModeNotifier = ref.watch(themeModeProvider.notifier);
 
     return RadioListTile<ThemeMode>(
       title: Text(themeMode.getLabel(context)),
@@ -35,7 +35,7 @@ class _ThemeModeRadioListTile extends HookConsumerWidget {
       groupValue: currentThemeMode,
       onChanged: (nullableValue) {
         if (nullableValue != null) {
-          themeModeController.updateThemeMode(value: nullableValue);
+          themeModeNotifier.updateThemeMode(value: nullableValue);
         }
       },
     );

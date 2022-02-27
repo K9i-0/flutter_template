@@ -2,13 +2,13 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 import 'home_screen_state.dart';
 
-final homeScreenControllerProvider =
-    StateNotifierProvider<HomeScreenController, HomeScreenState>(
-  (ref) => HomeScreenController(),
+final homeScreenProvider =
+    StateNotifierProvider<HomeScreenNotifier, HomeScreenState>(
+  (ref) => HomeScreenNotifier(),
 );
 
-class HomeScreenController extends StateNotifier<HomeScreenState> {
-  HomeScreenController()
+class HomeScreenNotifier extends StateNotifier<HomeScreenState> {
+  HomeScreenNotifier()
       : super(
           const HomeScreenState(count: 0),
         );

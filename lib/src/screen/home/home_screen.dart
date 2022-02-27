@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_template/src/controller/home/home_screen_controller.dart';
 import 'package:flutter_template/src/extension/extension.dart';
+import 'package:flutter_template/src/notifier/home/home_screen_notifier.dart';
 import 'package:flutter_template/src/resource/assets.gen.dart';
+import 'package:flutter_template/src/resource/route_name_resource.dart';
 import 'package:flutter_template/src/screen/settings/settings_screen.dart';
 import 'package:gap/gap.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-
-import '../../resource/route_name_resource.dart';
 
 part 'home_screen_app_bar.dart';
 part 'home_screen_body.dart';
