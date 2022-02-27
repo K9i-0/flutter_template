@@ -17,7 +17,10 @@ final _routerProvider = Provider(
       ),
       GoRoute(
         path: licenseScreenRouteName,
-        builder: (context, state) => const LicensePage(),
+        builder: (context, state) => LicensePage(
+          // TODO(K9i-0): dart-define対応
+          applicationIcon: Assets.images.appIconDev.image(width: 100),
+        ),
       ),
     ],
   ),

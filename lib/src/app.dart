@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_template/src/extension/extension.dart';
 import 'package:flutter_template/src/notifier/theme_mode/theme_mode_notifier.dart';
+import 'package:flutter_template/src/resource/assets.gen.dart';
 import 'package:flutter_template/src/screen/settings/settings_screen.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';

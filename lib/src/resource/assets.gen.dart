@@ -10,6 +10,18 @@ import 'package:flutter/widgets.dart';
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// File path: assets/images/app_icon_dev.png
+  AssetGenImage get appIconDev =>
+      const AssetGenImage('assets/images/app_icon_dev.png');
+
+  /// File path: assets/images/app_icon_prod.png
+  AssetGenImage get appIconProd =>
+      const AssetGenImage('assets/images/app_icon_prod.png');
+
+  /// File path: assets/images/app_icon_stg.png
+  AssetGenImage get appIconStg =>
+      const AssetGenImage('assets/images/app_icon_stg.png');
+
   /// File path: assets/images/fukuzawa_yukichi.png
   AssetGenImage get fukuzawaYukichi =>
       const AssetGenImage('assets/images/fukuzawa_yukichi.png');

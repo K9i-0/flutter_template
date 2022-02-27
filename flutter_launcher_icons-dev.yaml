@@ -1,0 +1,5 @@
+flutter_icons:
+  image_path: "assets/images/app_icon_dev.png"
+  android: true
+  ios: true
+  remove_alpha_ios: true
