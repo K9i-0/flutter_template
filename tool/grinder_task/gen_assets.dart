@@ -1,7 +1,7 @@
 part of '../grind.dart';
 
 @Task('flutter_genを実行')
-Future<void> genAssets() async {
+void genAssets() {
   run(
     'fluttergen',
     arguments: [

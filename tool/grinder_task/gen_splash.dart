@@ -1,7 +1,7 @@
 part of '../grind.dart';
 
 @Task('flutter_native_splashを実行')
-Future<void> genSplash() async {
+void genSplash() {
   run(
     'flutter',
     arguments: [

@@ -25,6 +25,10 @@ class $AssetsImagesGen {
   /// File path: assets/images/fukuzawa_yukichi.png
   AssetGenImage get fukuzawaYukichi =>
       const AssetGenImage('assets/images/fukuzawa_yukichi.png');
+
+  /// File path: assets/images/splash_icon.png
+  AssetGenImage get splashIcon =>
+      const AssetGenImage('assets/images/splash_icon.png');
 }
 
 class Assets {

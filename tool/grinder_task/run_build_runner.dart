@@ -1,7 +1,7 @@
 part of '../grind.dart';
 
 @Task('build_runnerでファイル生成')
-Future<void> runBuildRunner() async {
+void runBuildRunner() {
   run(
     'flutter',
     arguments: [

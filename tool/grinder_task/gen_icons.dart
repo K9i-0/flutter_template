@@ -1,7 +1,7 @@
 part of '../grind.dart';
 
 @Task('flutter_launcher_iconsを実行')
-Future<void> genIcons() async {
+void genIcons() {
   run(
     'flutter',
     arguments: [
