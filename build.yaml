@@ -5,4 +5,4 @@ targets:
       # freezedの生成対象を絞って高速化
         generate_for:
           include:
-            - lib/src/controller/**/*state.dart
+            - lib/src/notifier/**/*state.dart
