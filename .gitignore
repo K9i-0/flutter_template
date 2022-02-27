@@ -48,3 +48,4 @@ flutter_sdk
 
 # Dart-define related
 **/android/app/src/main/res/mipmap*/
+**/ios/Flutter/DartDefines.xcconfig

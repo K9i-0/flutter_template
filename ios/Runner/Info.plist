@@ -13,7 +13,9 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>flutter_template</string>
+	<string>Flutter Template$(APP_ID_SUFFIX)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Flutter Template$(APP_ID_SUFFIX)</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
