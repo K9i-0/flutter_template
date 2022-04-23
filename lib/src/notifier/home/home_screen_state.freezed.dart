@@ -12,21 +12,7 @@ part of 'home_screen_state.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$HomeScreenStateTearOff {
-  const _$HomeScreenStateTearOff();
-
-  _HomeScreenState call({required int count}) {
-    return _HomeScreenState(
-      count: count,
-    );
-  }
-}
-
-/// @nodoc
-const $HomeScreenState = _$HomeScreenStateTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$HomeScreenState {
@@ -143,10 +129,11 @@ class _$_HomeScreenState
 }
 
 abstract class _HomeScreenState implements HomeScreenState {
-  const factory _HomeScreenState({required int count}) = _$_HomeScreenState;
+  const factory _HomeScreenState({required final int count}) =
+      _$_HomeScreenState;
 
   @override
-  int get count;
+  int get count => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$HomeScreenStateCopyWith<_HomeScreenState> get copyWith =>

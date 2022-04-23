@@ -1,5 +1,5 @@
 {
-    "dart.flutterSdkPath": "$HOME/.asdf/installs/flutter/2.10.0-stable",
+    "dart.flutterSdkPath": "flutter_sdk",
     // スペルチェッカーの許可リスト
     "cSpell.words": [
         "prefs"
