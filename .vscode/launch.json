@@ -14,6 +14,16 @@
             ],
         },
         {
+            "name": "Run dev (with device_preview)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "args": [
+                "--dart-define=FLAVOR=dev",
+                "--dart-define=enable_device_preview=true",
+            ],
+        },
+        {
             "name": "Run stg",
             "request": "launch",
             "type": "dart",

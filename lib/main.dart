@@ -16,6 +16,7 @@ Future<void> main() async {
         sharedPreferencesProvider.overrideWithValue(sharedPreferences),
       ],
       child: DevicePreview(
+        enabled: const bool.fromEnvironment('enable_device_preview'),
         // tools: const [
         //   ...DevicePreview.defaultTools,
         //   DevicePreviewScreenshot(
