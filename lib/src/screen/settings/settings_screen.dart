@@ -7,7 +7,7 @@ part 'settings_screen_body.dart';
 part 'theme_mode_radio_list_tile.dart';
 
 class SettingsScreen extends HookConsumerWidget {
-  const SettingsScreen({Key? key}) : super(key: key);
+  const SettingsScreen({super.key});
 
   static const routeName = '/settings';
 

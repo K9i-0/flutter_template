@@ -1,7 +1,7 @@
 part of 'home_screen.dart';
 
 class _Drawer extends HookConsumerWidget {
-  const _Drawer({Key? key}) : super(key: key);
+  const _Drawer();
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

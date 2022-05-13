@@ -19,9 +19,7 @@ extension _ThemeModeEx on ThemeMode {
 }
 
 class _ThemeModeRadioListTile extends HookConsumerWidget {
-  const _ThemeModeRadioListTile({
-    Key? key,
-  }) : super(key: key);
+  const _ThemeModeRadioListTile();
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

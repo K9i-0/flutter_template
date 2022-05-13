@@ -14,7 +14,7 @@ part 'home_screen_drawer.dart';
 part 'home_screen_fab.dart';
 
 class HomeScreen extends HookConsumerWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   static const routeName = '/';
 

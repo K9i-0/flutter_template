@@ -6,6 +6,7 @@ analyzer:
     - "**/*.freezed.dart"
     - "**/*.g.dart"
     - lib/src/resource/l10n/generated/**.dart
+    - lib/src/resource/assets.gen.dart
   errors:
     todo: ignore
     depend_on_referenced_packages: ignore

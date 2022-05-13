@@ -1,7 +1,7 @@
 part of '../grind.dart';
 
 @Task('build_runnerでファイル生成')
-void runBuildRunner() {
+void gend() {
   run(
     'flutter',
     arguments: [

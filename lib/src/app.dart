@@ -15,7 +15,7 @@ import 'screen/home/home_screen.dart';
 part 'router.dart';
 
 class App extends HookConsumerWidget {
-  const App({Key? key}) : super(key: key);
+  const App({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
