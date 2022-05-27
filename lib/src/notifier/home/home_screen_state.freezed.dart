@@ -54,31 +54,31 @@ class _$HomeScreenStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$HomeScreenStateCopyWith<$Res>
+abstract class _$$_HomeScreenStateCopyWith<$Res>
     implements $HomeScreenStateCopyWith<$Res> {
-  factory _$HomeScreenStateCopyWith(
-          _HomeScreenState value, $Res Function(_HomeScreenState) then) =
-      __$HomeScreenStateCopyWithImpl<$Res>;
+  factory _$$_HomeScreenStateCopyWith(
+          _$_HomeScreenState value, $Res Function(_$_HomeScreenState) then) =
+      __$$_HomeScreenStateCopyWithImpl<$Res>;
   @override
   $Res call({int count});
 }
 
 /// @nodoc
-class __$HomeScreenStateCopyWithImpl<$Res>
+class __$$_HomeScreenStateCopyWithImpl<$Res>
     extends _$HomeScreenStateCopyWithImpl<$Res>
-    implements _$HomeScreenStateCopyWith<$Res> {
-  __$HomeScreenStateCopyWithImpl(
-      _HomeScreenState _value, $Res Function(_HomeScreenState) _then)
-      : super(_value, (v) => _then(v as _HomeScreenState));
+    implements _$$_HomeScreenStateCopyWith<$Res> {
+  __$$_HomeScreenStateCopyWithImpl(
+      _$_HomeScreenState _value, $Res Function(_$_HomeScreenState) _then)
+      : super(_value, (v) => _then(v as _$_HomeScreenState));
 
   @override
-  _HomeScreenState get _value => super._value as _HomeScreenState;
+  _$_HomeScreenState get _value => super._value as _$_HomeScreenState;
 
   @override
   $Res call({
     Object? count = freezed,
   }) {
-    return _then(_HomeScreenState(
+    return _then(_$_HomeScreenState(
       count: count == freezed
           ? _value.count
           : count // ignore: cast_nullable_to_non_nullable
@@ -114,7 +114,7 @@ class _$_HomeScreenState
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _HomeScreenState &&
+            other is _$_HomeScreenState &&
             const DeepCollectionEquality().equals(other.count, count));
   }
 
@@ -124,8 +124,8 @@ class _$_HomeScreenState
 
   @JsonKey(ignore: true)
   @override
-  _$HomeScreenStateCopyWith<_HomeScreenState> get copyWith =>
-      __$HomeScreenStateCopyWithImpl<_HomeScreenState>(this, _$identity);
+  _$$_HomeScreenStateCopyWith<_$_HomeScreenState> get copyWith =>
+      __$$_HomeScreenStateCopyWithImpl<_$_HomeScreenState>(this, _$identity);
 }
 
 abstract class _HomeScreenState implements HomeScreenState {
@@ -136,6 +136,6 @@ abstract class _HomeScreenState implements HomeScreenState {
   int get count => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$HomeScreenStateCopyWith<_HomeScreenState> get copyWith =>
+  _$$_HomeScreenStateCopyWith<_$_HomeScreenState> get copyWith =>
       throw _privateConstructorUsedError;
 }
