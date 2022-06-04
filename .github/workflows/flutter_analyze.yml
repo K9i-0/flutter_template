@@ -15,7 +15,6 @@ jobs:
           flutter_info=$(grep 'flutter' .tool-versions)
           echo "::set-output name=version::$(echo ${flutter_info} | sed -r 's/^flutter ([a-z0-9\.\+\-]+)\-(stable|beta|dev)$/\1/')"
           echo "::set-output name=channel::$(echo ${flutter_info} | sed -r 's/^flutter ([a-z0-9\.\+\-]+)\-(stable|beta|dev)$/\2/')"
-            shell: bash
       - name: "Install Flutter"
         run: ./.github/workflows/scripts/install-flutter.sh ${{ steps.flutter_info.outputs.version }}
       - run: flutter pub get
