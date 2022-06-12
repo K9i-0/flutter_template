@@ -5,10 +5,8 @@ class _Fab extends HookConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final notifier = ref.watch(homeScreenProvider.notifier);
-
     return FloatingActionButton(
-      onPressed: notifier.increment,
+      onPressed: ref.read.notifier.increment,
       tooltip: 'Increment',
       child: const Icon(Icons.add),
     );
