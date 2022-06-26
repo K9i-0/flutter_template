@@ -28,7 +28,9 @@ class App extends HookConsumerWidget {
       useInheritedMediaQuery: true,
       locale: DevicePreview.locale(context),
       builder: DevicePreview.appBuilder,
-      // routeInformationParser、routerDelegateはgo_routerに必要
+      // routeInformationProvider、routeInformationParser、routerDelegateは
+      // go_routerに必要
+      routeInformationProvider: router.routeInformationProvider,
       routeInformationParser: router.routeInformationParser,
       routerDelegate: router.routerDelegate,
       localizationsDelegates: const [

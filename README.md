@@ -35,3 +35,8 @@ settings.jsonにasdf前提の設定があります。
    1. assets/imagesディレクトリにあるsplash_icon.pngを使いたい画像に置き換えます。
    2. grind gen-splashでスプラッシュ画像を生成します。
 
+## Flutter sdk path
+```
+asdf install
+ln -nfs $HOME/.asdf/installs/flutter/3.0.3-stable flutter_sdk
+```
