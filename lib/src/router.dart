@@ -12,14 +12,9 @@ final _routerProvider = Provider(
         builder: (context, state) => const HomeScreen(),
       ),
       GoRoute(
-        path: SettingsScreen.routeName,
-        builder: (context, state) => const SettingsScreen(),
-      ),
-      GoRoute(
         path: licenseScreenRouteName,
         builder: (context, state) => LicensePage(
-          applicationIcon:
-              ref.read(flavorProvider).toAssetGenImage().image(width: 100),
+          applicationIcon: Assets.images.licensePageIcon.image(width: 100),
         ),
       ),
     ],

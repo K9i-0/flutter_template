@@ -12,25 +12,13 @@ import 'package:flutter/widgets.dart';
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
-  /// File path: assets/images/app_icon_dev.png
-  AssetGenImage get appIconDev =>
-      const AssetGenImage('assets/images/app_icon_dev.png');
-
-  /// File path: assets/images/app_icon_prod.png
-  AssetGenImage get appIconProd =>
-      const AssetGenImage('assets/images/app_icon_prod.png');
-
-  /// File path: assets/images/app_icon_stg.png
-  AssetGenImage get appIconStg =>
-      const AssetGenImage('assets/images/app_icon_stg.png');
-
   /// File path: assets/images/fukuzawa_yukichi.png
   AssetGenImage get fukuzawaYukichi =>
       const AssetGenImage('assets/images/fukuzawa_yukichi.png');
 
-  /// File path: assets/images/splash_icon.png
-  AssetGenImage get splashIcon =>
-      const AssetGenImage('assets/images/splash_icon.png');
+  /// File path: assets/images/license_page_icon.png
+  AssetGenImage get licensePageIcon =>
+      const AssetGenImage('assets/images/license_page_icon.png');
 }
 
 class Assets {
@@ -51,7 +39,7 @@ class AssetGenImage {
     ImageErrorWidgetBuilder? errorBuilder,
     String? semanticLabel,
     bool excludeFromSemantics = false,
-    double? scale = 1.0,
+    double? scale,
     double? width,
     double? height,
     Color? color,
@@ -98,4 +86,6 @@ class AssetGenImage {
   }
 
   String get path => _assetName;
+
+  String get keyName => _assetName;
 }

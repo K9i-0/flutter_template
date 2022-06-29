@@ -1,5 +1,7 @@
 flutter_icons:
-  image_path: "assets/images/app_icon_dev.png"
+  image_path: "assets/app_icons/app_icon_dev.png"
+  adaptive_icon_background: 'assets/app_icons/app_icon_background_dev.png'
+  adaptive_icon_foreground: 'assets/app_icons/app_icon_foreground.png'
   android: true
   ios: true
   remove_alpha_ios: true

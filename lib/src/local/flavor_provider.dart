@@ -1,4 +1,3 @@
-import 'package:flutter_template/src/resource/assets.gen.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 final flavorProvider = Provider<Flavor>(
@@ -21,17 +20,4 @@ enum Flavor {
   dev,
   stg,
   prod,
-}
-
-extension FlavorEx on Flavor {
-  AssetGenImage toAssetGenImage() {
-    switch (this) {
-      case Flavor.dev:
-        return Assets.images.appIconDev;
-      case Flavor.stg:
-        return Assets.images.appIconStg;
-      case Flavor.prod:
-        return Assets.images.appIconProd;
-    }
-  }
 }

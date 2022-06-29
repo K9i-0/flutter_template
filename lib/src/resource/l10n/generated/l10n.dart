@@ -90,10 +90,10 @@ class L10n {
     );
   }
 
-  /// `Home`
+  /// `Flutter Template`
   String get homeScreenTitle {
     return Intl.message(
-      'Home',
+      'Flutter Template',
       name: 'homeScreenTitle',
       desc: '',
       args: [],
