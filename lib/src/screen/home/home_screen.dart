@@ -24,6 +24,7 @@ extension _ReaderEx on Reader {
 }
 
 extension _WidgetRefEx on WidgetRef {
+  // ignore: unused_element
   T selectFromState<T>(T Function(HomeScreenState state) selector) =>
       watch(homeScreenProvider.select(selector));
 }
