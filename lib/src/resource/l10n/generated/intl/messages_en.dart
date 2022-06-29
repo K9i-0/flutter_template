@@ -29,7 +29,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Settings"),
         "homeScreenDrawerHeaderTitle":
             MessageLookupByLibrary.simpleMessage("Drawer"),
-        "homeScreenTitle": MessageLookupByLibrary.simpleMessage("Home"),
+        "homeScreenTitle":
+            MessageLookupByLibrary.simpleMessage("Flutter Template"),
         "settingsScreenThemeModeRadioLabelDark":
             MessageLookupByLibrary.simpleMessage("Dark"),
         "settingsScreenThemeModeRadioLabelLight":

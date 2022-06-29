@@ -15,11 +15,6 @@ class _Drawer extends HookConsumerWidget {
             accountEmail: const Text('sample@example.com'),
           ),
           ListTile(
-            leading: const Icon(Icons.settings),
-            title: Text(context.l10n.homeScreenDrawerHeaderLabelSettings),
-            onTap: () => context.push(SettingsScreen.routeName),
-          ),
-          ListTile(
             leading: const Icon(Icons.info),
             title: Text(context.l10n.homeScreenDrawerHeaderLabelOSSLicense),
             onTap: () => context.push(licenseScreenRouteName),

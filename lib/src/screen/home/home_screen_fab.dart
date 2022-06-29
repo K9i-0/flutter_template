@@ -7,8 +7,8 @@ class _Fab extends HookConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return FloatingActionButton(
       onPressed: ref.read.notifier.increment,
-      tooltip: 'Increment',
-      child: const Icon(Icons.add),
+      tooltip: 'Earn',
+      child: const Icon(Icons.money),
     );
   }
 }
