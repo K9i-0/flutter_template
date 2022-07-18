@@ -2,6 +2,7 @@
 import 'dart:io';
 
 import 'package:device_preview_screenshot/device_preview_screenshot.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:image/image.dart' as img;
@@ -44,6 +45,10 @@ Future<void> onScreenshot(
   //   ClipboardData(text: 'open ${file.parent.path}'),
   // );
   // スクショがあるディレクトリのpngファイルをデスクトップに移動するコマンドをクリップボードにセット
+  final message = 'mv ${file.parent.path}/*.png ~/Desktop';
+  if (kDebugMode) {
+    print(message);
+  }
   await Clipboard.setData(
     ClipboardData(text: 'mv ${file.parent.path}/*.png ~/Desktop'),
   );
