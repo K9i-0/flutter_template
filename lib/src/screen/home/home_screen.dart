@@ -19,11 +19,8 @@ final _showRecordFabProvider = Provider(
   (ref) => ref.watch(_screenIndexProvider) == 0,
 );
 
-extension _ReaderEx on Reader {
-  HomeScreenNotifier get notifier => this(homeScreenProvider.notifier);
-}
-
 extension _WidgetRefEx on WidgetRef {
+  HomeScreenNotifier get notifier => read(homeScreenProvider.notifier);
   // ignore: unused_element
   T selectFromState<T>(T Function(HomeScreenState state) selector) =>
       watch(homeScreenProvider.select(selector));

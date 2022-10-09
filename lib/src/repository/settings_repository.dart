@@ -5,16 +5,16 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 final settingsRepositoryProvider = Provider(
-  (ref) => SettingsRepository(read: ref.read),
+  (ref) => SettingsRepository(ref: ref),
 );
 
 class SettingsRepository {
   SettingsRepository({
-    required Reader read,
-  }) : _read = read;
-  final Reader _read;
+    required Ref ref,
+  }) : _ref = ref;
+  final Ref _ref;
 
-  SharedPreferences get _prefs => _read(sharedPreferencesProvider);
+  SharedPreferences get _prefs => _ref.read(sharedPreferencesProvider);
 
   ThemeMode get themeMode {
     final themeModeIndex = _prefs.getInt(preferenceKeyThemeMode);

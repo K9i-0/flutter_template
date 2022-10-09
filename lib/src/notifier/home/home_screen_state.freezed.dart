@@ -133,7 +133,7 @@ abstract class _HomeScreenState implements HomeScreenState {
       _$_HomeScreenState;
 
   @override
-  int get count => throw _privateConstructorUsedError;
+  int get count;
   @override
   @JsonKey(ignore: true)
   _$$_HomeScreenStateCopyWith<_$_HomeScreenState> get copyWith =>
