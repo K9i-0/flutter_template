@@ -5,18 +5,18 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 final themeModeProvider =
     StateNotifierProvider<ThemeModeNotifier, ThemeMode>((ref) {
   final initMode = ref.read(settingsRepositoryProvider).themeMode;
-  return ThemeModeNotifier(read: ref.read, initMode: initMode);
+  return ThemeModeNotifier(ref: ref, initMode: initMode);
 });
 
 class ThemeModeNotifier extends StateNotifier<ThemeMode> {
   ThemeModeNotifier({
-    required Reader read,
+    required Ref ref,
     required ThemeMode initMode,
-  })  : _read = read,
+  })  : _ref = ref,
         super(initMode);
-  final Reader _read;
+  final Ref _ref;
   SettingsRepository get _settingsRepository =>
-      _read(settingsRepositoryProvider);
+      _ref.read(settingsRepositoryProvider);
 
   Future<void> updateThemeMode({
     required ThemeMode value,
