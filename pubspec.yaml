@@ -25,10 +25,8 @@ dependencies:
   shared_preferences: ^2.0.15
 
 dev_dependencies:
-  build_runner: ^2.2.1
-  flutter_gen_runner: ^5.0.1
-  # 最新のbuild.gradleの書き方に対応してないので応急処置版を使う
-  # https://github.com/fluttercommunity/flutter_launcher_icons/issues/316
+  build_runner: ^2.3.2
+  flutter_gen_runner: ^5.0.3
   flutter_launcher_icons: ^0.10.0
   flutter_native_splash: ^2.2.11
   flutter_test:
