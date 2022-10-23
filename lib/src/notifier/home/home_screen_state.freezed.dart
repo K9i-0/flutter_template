@@ -27,29 +27,32 @@ mixin _$HomeScreenState {
 abstract class $HomeScreenStateCopyWith<$Res> {
   factory $HomeScreenStateCopyWith(
           HomeScreenState value, $Res Function(HomeScreenState) then) =
-      _$HomeScreenStateCopyWithImpl<$Res>;
+      _$HomeScreenStateCopyWithImpl<$Res, HomeScreenState>;
+  @useResult
   $Res call({int count});
 }
 
 /// @nodoc
-class _$HomeScreenStateCopyWithImpl<$Res>
+class _$HomeScreenStateCopyWithImpl<$Res, $Val extends HomeScreenState>
     implements $HomeScreenStateCopyWith<$Res> {
   _$HomeScreenStateCopyWithImpl(this._value, this._then);
 
-  final HomeScreenState _value;
   // ignore: unused_field
-  final $Res Function(HomeScreenState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? count = freezed,
+    Object? count = null,
   }) {
     return _then(_value.copyWith(
-      count: count == freezed
+      count: null == count
           ? _value.count
           : count // ignore: cast_nullable_to_non_nullable
               as int,
-    ));
+    ) as $Val);
   }
 }
 
@@ -60,26 +63,25 @@ abstract class _$$_HomeScreenStateCopyWith<$Res>
           _$_HomeScreenState value, $Res Function(_$_HomeScreenState) then) =
       __$$_HomeScreenStateCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int count});
 }
 
 /// @nodoc
 class __$$_HomeScreenStateCopyWithImpl<$Res>
-    extends _$HomeScreenStateCopyWithImpl<$Res>
+    extends _$HomeScreenStateCopyWithImpl<$Res, _$_HomeScreenState>
     implements _$$_HomeScreenStateCopyWith<$Res> {
   __$$_HomeScreenStateCopyWithImpl(
       _$_HomeScreenState _value, $Res Function(_$_HomeScreenState) _then)
-      : super(_value, (v) => _then(v as _$_HomeScreenState));
+      : super(_value, _then);
 
-  @override
-  _$_HomeScreenState get _value => super._value as _$_HomeScreenState;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? count = freezed,
+    Object? count = null,
   }) {
     return _then(_$_HomeScreenState(
-      count: count == freezed
+      count: null == count
           ? _value.count
           : count // ignore: cast_nullable_to_non_nullable
               as int,
@@ -115,15 +117,15 @@ class _$_HomeScreenState
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_HomeScreenState &&
-            const DeepCollectionEquality().equals(other.count, count));
+            (identical(other.count, count) || other.count == count));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(count));
+  int get hashCode => Object.hash(runtimeType, count);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_HomeScreenStateCopyWith<_$_HomeScreenState> get copyWith =>
       __$$_HomeScreenStateCopyWithImpl<_$_HomeScreenState>(this, _$identity);
 }
