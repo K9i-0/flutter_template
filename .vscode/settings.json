@@ -1,5 +1,5 @@
 {
-    "dart.flutterSdkPath": "~/.asdf/installs/flutter/3.3.5-stable",
+    "dart.flutterSdkPath": "~/.asdf/installs/flutter/3.3.6-stable",
     // スペルチェッカーの許可リスト
     "cSpell.words": [
         "prefs"
